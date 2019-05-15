@@ -40,6 +40,7 @@ public class HomeParticularsActivity extends AppCompatActivity {
     private HomeParticularsAdapter mAdapter;
     private RecyclerView mRlv;
     private int mId;
+    private int a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
