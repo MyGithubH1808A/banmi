@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:checked="true"
+        android:id="@+id/me_kaquan"
+        android:icon="@drawable/icon_me_kaquan"
+        android:title="@string/me_kaquan" />
+    <item
+        android:id="@+id/me_yigou"
+        android:icon="@drawable/icon_me_yigou"
+        android:title="@string/me_yigou" />
+    <item
+        android:id="@+id/me_shoucang"
+        android:icon="@drawable/icon_me_shoucang"
+        android:title="@string/me_shoucang" />
+    <item
+        android:id="@+id/me_guanzh"
+        android:icon="@drawable/icon_me_guanzhu"
+        android:title="@string/me_guanzh" />
+</menu>

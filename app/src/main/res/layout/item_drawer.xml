@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_me_kaquan"
+        android:id="@+id/iv_kaquan"
+        android:layout_marginLeft="@dimen/dp_10"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_40"/>
+    <ImageView
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_11"
+        android:src="@drawable/big_arrow_right"
+        android:layout_marginLeft="@dimen/dp_270"
+        android:id="@+id/iv_arrow"/>
+</RelativeLayout>

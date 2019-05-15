@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.HomeParticularsActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv"-->
+        <!--android:layout_width="@dimen/dp_360"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/zhanweitu_home_kapian" />-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlva">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_300" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<ImageView-->
+        <!--android:layout_width="@dimen/dp_60"-->
+        <!--android:layout_height="@dimen/dp_60"-->
+        <!--android:id="@+id/touxiang"-->
+        <!--android:src="@mipmap/zhanweitu_home_kapian"-->
+        <!--android:layout_marginTop="@dimen/dp_400" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_name"-->
+        <!--android:layout_marginLeft="@dimen/dp_60"-->
+        <!--android:layout_marginTop="@dimen/dp_410"-->
+        <!--android:gravity="center"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_intro"-->
+        <!--android:layout_marginLeft="@dimen/dp_60"-->
+        <!--android:layout_marginTop="@dimen/dp_422"-->
+        <!--android:gravity="center"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/city"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/dp_400"-->
+        <!--android:layout_marginLeft="@dimen/dp_330"/>-->
+
+
+</RelativeLayout>
