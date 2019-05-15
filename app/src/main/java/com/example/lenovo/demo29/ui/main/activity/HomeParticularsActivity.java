@@ -42,6 +42,7 @@ public class HomeParticularsActivity extends AppCompatActivity {
     private int mId;
     private int a;
     private int b;
+    private int c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
