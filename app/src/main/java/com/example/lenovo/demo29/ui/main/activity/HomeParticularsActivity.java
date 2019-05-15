@@ -41,6 +41,7 @@ public class HomeParticularsActivity extends AppCompatActivity {
     private RecyclerView mRlv;
     private int mId;
     private int a;
+    private int b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
