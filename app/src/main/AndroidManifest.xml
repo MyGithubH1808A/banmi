@@ -80,6 +80,9 @@
             android:theme="@style/FullScreen" />
         <activity android:name=".ui.main.activity.BanmiParticularsActivity" />
         <activity android:name=".ui.main.activity.EditActivity"></activity>
+        <meta-data
+            android:name="channel"
+            android:value="${CHANNEL_VALUE}"/>
     </application>
 
 </manifest>
