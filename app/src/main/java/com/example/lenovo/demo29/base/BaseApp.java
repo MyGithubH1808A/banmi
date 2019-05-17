@@ -1,11 +1,13 @@
 package com.example.lenovo.demo29.base;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
+import com.example.lenovo.demo29.utils.CrashHandler;
 import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 
@@ -19,12 +21,26 @@ public class BaseApp extends Application {
     public static int mWidthPixels;
     public static int mHeightPixels;
 
+
+    public static BaseApp getInstance(){
+        return sBaseApp;
+    }
+    public static Resources getRes() {
+        return sBaseApp.getResources();
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
         sBaseApp = this;
         getScreenWH();
         getUmeng();
+//        initCrashHandler();
+    }
+    //全局的异常捕捉器
+    private void initCrashHandler() {
+        CrashHandler instance = CrashHandler.getInstance();
+        instance.init(getInstance());
     }
 
     private void getUmeng() {
@@ -45,12 +61,5 @@ public class BaseApp extends Application {
         defaultDisplay.getMetrics(metrics);
         mWidthPixels = metrics.widthPixels;
         mHeightPixels = metrics.heightPixels;
-    }
-
-    public static BaseApp getInstance(){
-        return sBaseApp;
-    }
-    public static Resources getRes() {
-        return sBaseApp.getResources();
     }
 }

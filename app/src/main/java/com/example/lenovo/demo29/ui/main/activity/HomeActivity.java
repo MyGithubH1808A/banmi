@@ -106,6 +106,7 @@ public class HomeActivity extends BaseActivity<HomeMainIView, HomeMainPresenter>
         mTitles = new ArrayList<>();
         mTitles.add("首页");
         mTitles.add("伴米");
+//        mTitles.add("发现");
 
         VpHomeAdapter adapter = new VpHomeAdapter(getSupportFragmentManager(), mFragments, mTitles);
         vp.setAdapter(adapter);

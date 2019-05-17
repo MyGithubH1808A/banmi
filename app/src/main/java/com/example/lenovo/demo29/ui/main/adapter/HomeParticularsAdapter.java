@@ -61,6 +61,10 @@ public class HomeParticularsAdapter extends RecyclerView.Adapter{
             String location = banmi.getLocation();
             String introduction = banmi.getIntroduction();
             String occupation = banmi.getOccupation();
+            viewHolder2.mTv_Names.setText(name);
+            viewHolder2.mTv_r.setText(location);
+            viewHolder2.mTv_x.setText(occupation);
+            viewHolder2.mTv_xx.setText(introduction);
             Glide.with(mContext).load(photo).placeholder(R.mipmap.zhanweitu_home_kapian).into(viewHolder2.mTouXiang);
         }
     }
